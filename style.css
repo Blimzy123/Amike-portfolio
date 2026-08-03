@@ -1,0 +1,317 @@
+/* default styles */
+:root{
+  --primary-color:#A855F7;
+  --secondary-color:#1E293B;
+  --text-color:#F8FAFC;
+  --text-color-light:#94A3B8;
+  --font-family:'Poppins', arial, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* body styles */
+body{
+  font-family: 'Poppins', arial, sans-serif;
+  line-height:1.6;
+  background-color:#0F172A;
+  color:#F8FAFC;
+}
+
+h1, h2, h3 {
+  color:#ffffff;
+  margin-bottom: 25px;
+}
+
+p{
+   color: #94A3B8;
+   margin-bottom: 25px;
+}
+
+h1, h2 {
+  font-size:62px;
+  font-weight:700;
+  line-height:1.2;
+}
+
+/* image never overflow */
+img {
+  max-width:100%;
+  display:flex;
+}
+
+a {
+  text-decoration:none;
+  color:#A855F7;
+}
+
+section{
+  padding: 100px 15px;
+}
+
+header{
+  background:#0F172A;
+  padding: 25px 40px;
+  position: sticky;
+  top:0;
+  z-index:100;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+header nav ul{
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+
+
+
+header nav ul li a{
+  color:#ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  
+}
+
+header nav ul li a:hover{
+  color:#A855F7;
+  
+}
+
+header {
+  top: 0;
+  z-index: 100;
+}
+
+.logo h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color:#ffffff;
+}
+
+.logo h2 span {
+  color:#A855F7;
+}
+
+
+section {
+  padding: 60px 15px;
+}
+
+/* hero section */
+.hero-text {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  padding:70px 10%;
+  background-color: #0e041e2e; 
+  /* background-image: url('images/hero-bg.jpg');  */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ /* left side
+ .hero{
+  width:1%;
+ }*/
+
+ /* social-icons */
+
+ .social-icons{
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#ffffff;
+  font-size: 22px;
+  border: 1px solid #A855F7;
+  border-radius: 50%;
+  transition:.3s; 
+
+  }
+
+  .social-icons a:hover{
+    background-color: #A855F7;
+    color: #ffffff;
+  }
+
+  /* name */
+  .hero-text h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  /* paragraph */
+
+  .hero-text-p {
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 0px;
+    line-height: 1.2;
+    font-weight: 700px;
+    
+   
+  }
+  #hero div{ 
+   display: flex; 
+   gap: 40px; 
+   align-items: flex-end; 
+  max-width: 1170px; 
+  margin: 0 auto; 
+ }
+
+ /* .hero-btns {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+  } */
+
+
+ .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  color:#ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  gap: 20px;
+  border-radius: 80px;
+  transition:.3s;
+  border: 1px solid #A855F7;
+ }
+  
+ .btn:hover{
+  background-color:#A855F7;
+ }
+
+ .play-btn {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#ffffff;
+  background-color: #A855F7;
+  font-size: 22px;
+  gap: 20px;
+  border: 1px solid #A855F7;
+  border-radius: 60px;
+  transition:.3s; 
+ } 
+
+
+ #hero div{ 
+max-width: 1170px; 
+  margin: 0 auto; 
+} 
+
+.hero-imageright {
+flex: 1; 
+display: flex;
+justify-content: flex-end;
+width: 430px;
+height: 500px;
+}
+
+section {
+  padding: 60px 15px;
+}
+
+/*service section */
+.section-title-underline {
+text-align: center;
+color: #A855F7;
+font-weight: 600;
+}
+
+hr {
+  border: none;
+  height: 2.5px;
+  width: 50px;
+  background-color: #A855F7;
+  margin: 20px auto;
+  
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.card{
+  background-color:#1E293B;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.card:hover{
+  transform: translatey(-10px);
+  background-color: #A855F7;
+}
+
+.card i{
+  font-size: 40px;
+  color: #ffffff;
+  background-color: #A855F7;
+ 
+  margin-bottom: 20px;
+}
+
+.card i:hover{
+  background-color: #ffffff;
+}
+
+.card h3{
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.card p{
+  color: #ffffff;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
